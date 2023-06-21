@@ -1,16 +1,26 @@
 /* 
 Задание 3
-Пользователь с клавиатуры вводит 3 числа, необходимо создать функцию, 
-которая определяет максимальное значение среди этих чисел
+Используя Math.random() вам необходимо генерировать цифры от 0 до 9, и создать массив состоящий из 5 таких элементов
+1. Рассчитать сумму элементов этого массива
+2. Найти минимальное число
+3. Найти есть ли в этом массиве число 3
 */
 
-
-let numb1 = 5;
-let numb2 = 7;
-let numb3 = 9;
-
-function maxVal(num1, num2, num3) {
-    return Math.max(num1, num2, num3);
+const arr = [];
+let sum = 0;
+let min = 10;
+let find = false;
+for (let i = 0; i < 5; i++) {
+    let num = Math.ceil((Math.random()) * 10);
+    arr.push(num);
+    sum += num;
+    if (min > num) {
+        min = num;
+    }
+    if (num == 3) {
+        find = true;
+    }
 }
-
-console.log(maxVal(numb1, numb2, numb3));
+console.log(`Сумма массива [${arr}] равна ${sum},
+минимальное значение равно ${min},
+встречалась ли в массиве тройка - ${find}`);
