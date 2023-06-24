@@ -1,26 +1,22 @@
 /* 
 Задание 3
-Используя Math.random() вам необходимо генерировать цифры от 0 до 9, и создать массив состоящий из 5 таких элементов
-1. Рассчитать сумму элементов этого массива
-2. Найти минимальное число
-3. Найти есть ли в этом массиве число 3
+Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach.
 */
 
-const arr = [];
-let sum = 0;
-let min = 10;
-let find = false;
-for (let i = 0; i < 5; i++) {
-    let num = Math.ceil((Math.random()) * 10);
-    arr.push(num);
-    sum += num;
-    if (min > num) {
-        min = num;
-    }
-    if (num == 3) {
-        find = true;
-    }
-}
-console.log(`Сумма массива [${arr}] равна ${sum},
-минимальное значение равно ${min},
-встречалась ли в массиве тройка - ${find}`);
+
+const products = [
+    {
+        id: 3,
+        price: 200,
+    },
+    {
+        id: 4,
+        price: 900,
+    },
+    {
+        id: 1,
+        price: 1000,
+    },
+];
+
+products.forEach(el => console.log(el.price * 0.85))

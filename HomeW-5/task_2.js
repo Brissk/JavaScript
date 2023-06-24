@@ -1,9 +1,31 @@
 /* 
 Задание 2
-Дан массив [1, 2, 3, 4, 5, 6, 7]
-Сделайте из этого массива следующий [1, 2, 3, 6, 7]
+Необходимо из объекта, который лежит в константе post вывести значения, к которым приписан комментарий, в консоль.
 */
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
-arr.splice(3, 2);
-console.log(arr);
+const post = {
+    author: "John", // вывести этот текст
+    postId: 23,
+    comments: [
+        {
+            userId: 10,
+            userName: "Alex",
+            text: "lorem ipsum",
+            rating: {
+                likes: 10,
+                dislikes: 2, // вывести это число
+            },
+        },
+        {
+            userId: 5, // вывести это число
+            userName: "Jane",
+            text: "lorem ipsum 2", // вывести этот текст
+            rating: {
+                likes: 3,
+                dislikes: 1,
+            },
+        },
+    ],
+};
+
+console.log(post.author, post.comments[0].rating.dislikes, post.comments[1].userId, post.comments[1].text);
