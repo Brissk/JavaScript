@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Mango",
+        "image": "images/image12.svg",
+        "price": 300,
+        "color": "Red",
+        "size": "XL",
+        "quantity": 2
+    },
+    {
+        "name": "Zuzu",
+        "image": "images/image13-2.svg",
+        "price": 150,
+        "color": "Green",
+        "size": "XXXL",
+        "quantity": 7
+    },
+    {
+        "name": "Adidas",
+        "image": "images/image14.svg",
+        "price": 50,
+        "color": "Green",
+        "size": "XXXL",
+        "quantity": 1
+    },
+    {
+        "name": "Nike",
+        "image": "images/image15.svg",
+        "price": 550,
+        "color": "Green",
+        "size": "XXXL",
+        "quantity": 5
+    },
+    {
+        "name": "Menzu",
+        "image": "images/image16.svg",
+        "price": 750,
+        "color": "Green",
+        "size": "XXXL",
+        "quantity": 9
+    }
+]

@@ -1,0 +1,48 @@
+
+// Кнопка
+
+.btn
+    width: 100%
+    display: flex
+    align-items: center
+
+    &-center
+        justify-content: center
+
+    &-left
+        justify-content: flex-start
+
+    &-right
+        justify-content: flex-end
+
+    &-text
+        @include text('Lato',normal,400,16px,19px,#000000)
+        background: #FFFFFF
+        border: 1px solid $colorTop
+        padding: 12px 20px
+        cursor: pointer
+
+    &-text:hover
+        color: #FFFFFF
+        background: $colorTop
+        transition: .4s
+
+    &-pink
+        color: $colorMain
+        background: #FFFFFF
+        border: 1px solid $colorMain
+
+    &-pink:hover
+        color: #FFFFFF
+        background: $colorMain
+        transition: .4s
+
+    &-grey
+        color: #A4A4A4
+        background: #F5F3F3
+        border: 1px solid #B1B1B1
+
+    &-grey:hover
+        color: $colorGrey
+        background: #B1B1B1
+        transition: .4s

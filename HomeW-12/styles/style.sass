@@ -1,0 +1,186 @@
+@import 'vars'
+@import 'mixins'
+@import 'animations'
+@import 'common-objects'
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+
+body
+    font-family: 'Lato', sans-serif
+    position: relative
+
+.container
+    max-width: $widthMain
+    margin: 0 auto
+
+// Block items
+
+.items
+    margin-bottom: 3%
+
+    &__flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__title
+        width: 100%
+        text-align: center
+        margin-bottom: 5%
+
+    &__title_one
+        @include text('Lato', normal, 400, 30px, 36px, $colorTop)
+        margin-bottom: 1%
+
+    &__title_two
+        @include text('Lato', normal, 400, 14px, 17px, #9F9F9F)
+
+    &__box
+        display: flex
+        gap: 20px
+        flex-wrap: wrap
+
+    &__product
+        max-width: 31%
+        margin-bottom: 3%
+        position: relative
+
+    &__product_link
+        display: block
+
+    &__image
+        width: 100%
+
+    &__text
+        padding: 5%
+
+    &__text_1
+        @include text('Lato', normal, 400, 13px, 16px, $colorTop)
+        text-transform: uppercase
+        margin-bottom: 5%
+
+    &__text_2
+        @include text("Lato", normal, 300, 14px, 17px, $colorGrey)
+        margin-bottom: 5%
+
+    &__text_3
+        @include text("Lato", normal, 400, 16px, 19px, $colorMain)
+
+    &__product_box
+        display: none
+        position: absolute
+        top: 30%
+        justify-content: center
+        width: 100%
+        pointer-events: none
+        cursor: pointer
+
+    &__product_box a
+        border: 1px solid #fff
+        padding: 3% 5%
+        display: flex
+        pointer-events: all
+        align-items: center
+
+    &__product_box img
+        margin-right: 13px
+
+    &__product_box p
+        @include text("Lato", normal, 700, 13px, 16px, #ffffff)
+        margin-bottom: 0
+
+    &__product:hover
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+    &__product:hover .items__product_box
+        display: flex
+
+    &__product_box a:hover
+        box-shadow: 0 0 8px #fff
+
+    &__product:hover .items__image
+        filter: sepia(15%) brightness(30%)
+
+    &__btn-text_1
+        text-transform: capitalize
+
+    &__pagination
+        width: 100%
+        display: flex
+        justify-content: center
+
+.product__box
+    padding-top: 50px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    gap: 20px
+
+.product
+    position: relative
+
+.btn__del
+    position: absolute
+    top: 28px
+    right: 22px
+    width: 18px
+    height: 18px
+    font-size: 0
+    border: none
+    background: none
+    background-position: center
+    background-repeat: no-repeat
+    background-image: url(../images/cross.svg)
+    cursor: pointer
+
+.product__content
+    display: flex
+    width: 652px
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+.product__img
+    width: 262px
+
+.product__desc
+    padding: 22px 97px 62px 31px
+    font-weight: 400
+    font-size: 22px
+    line-height: 26px
+    color: #575757
+
+.product__name
+    margin-bottom: 42px
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 30px
+    color: #222222
+
+.product__price
+    font-size: 22px
+    font-style: normal
+    font-weight: 400
+    line-height: 26px
+    color: #EF5B70
+
+.product__qty
+    gap: 24px
+    flex-direction: row
+    flex-wrap: nowrap
+    display: flex
+
+.input__quantity
+    width: 44px
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: #656565
+    text-align: center
+    border: 1px solid #EAEAEA
