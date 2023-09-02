@@ -1,0 +1,15 @@
+.show {
+    animation: vision 1s ease-in-out;
+
+
+}
+
+@keyframes vision {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
