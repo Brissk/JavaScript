@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+        }
+
+        #userInput {
+            height: 50px;
+        }
+
+        textarea {
+            margin: 20px 0;
+        }
+
+        #addComment {
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        #clearBtn {
+            height: 50px;
+        }
+
+        a {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Отзывы:</h1>
+    <div class="main">
+        <form class="form">
+            <input type="text" name="name" id="userInput" placeholder="Введите имя продукта">
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Введите комментарий"></textarea>
+            <button id="addComment">Добавить отзыв</button>
+            <button id="clearBtn">Очистить хранилище</button>
+            <a href="comments.html">Просмотреть все озывы</a>
+            <div id="hintForUser"></div>
+        </form>
+    </div>
+
+    <script src="Task1.js"></script>
+</body>
+
+</html>
