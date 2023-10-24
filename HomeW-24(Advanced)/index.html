@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-box {
+            width: 1000px;
+            max-height: 550px;
+            overflow: hidden;
+        }
+
+        .nav-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Слайдер</h1>
+    <div class="main">
+        <div class="image-box">
+        </div>
+        <div class="nav-box">
+            <div class="nav__pagination">
+            </div>
+            <div class="nav__buttons">
+                <button class="previous-btn">Предыдущее изображение</button>
+                <button class="next-btn">Следующее изображение</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Task1.js"></script>
+</body>
+
+</html>
